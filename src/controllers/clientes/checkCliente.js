@@ -8,12 +8,6 @@ const checkCliente = async (req, res) => {
         const clienteEmail = await knex('clientes').where({email: email, status: 0}).first();
         const clienteCPF = await knex('clientes').where({cpf: cpf, status: 0}).first();
 
-        console.log('Cliente Email: ')
-        console.log(clienteEmail)
-
-        console.log('Cliente CPF: ')
-        console.log(clienteCPF)
-
         if(clienteEmail || clienteCPF){
             res.status(200).json({ exists: true , id: clienteEmail ? clienteEmail.id : clienteCPF.id});
         }else{
