@@ -89,8 +89,8 @@ CREATE TABLE IF NOT EXISTS clientes (
   	email varchar NOT NULL UNIQUE,
   	telefone varchar(11) NOT NULL, 
   	data_de_cadastro date NOT NULL,
-  	url_da_foto varchar 
-  
+  	url_da_foto varchar,
+  	status integer,
   
 )
 ```
@@ -103,7 +103,8 @@ CREATE TABLE IF NOT EXISTS imoveis (
   tipo varchar(11) NOT NULL,
   valor_de_venda money NOT NULL,
   endereco varchar(255) NOT NULL,
-  url_da_foto varchar 
+  url_da_foto varchar,
+  status integer
   )
 ```
 ### Crie a tabela de vendas
@@ -138,11 +139,9 @@ jwt_SECRET = e utilize esta variável para criar uma chave secreta que será uti
 ## Rodando a API 
 
 # Clone este repositório
-$ `git clone <https://github.com/hatigo/desafio-tecnico-strategi-backend>`
+$ `git clone <https://github.com/PauloFAndrade/DesafioStrategi-Back>`
 
 # Acesse a pasta do projeto no terminal/cmd
-$ `cd desafio-tecnico--thiago-lucas-mendonca-ferreira-backend`
-
 
 # Instale as dependências
 $  `npm install`
@@ -151,7 +150,6 @@ $  `npm install`
 $ `npm run dev`
 
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000> 
-
 
 ---
 
@@ -441,13 +439,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<a href="https://github.com/hatigo">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/18693568?v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Thiago Ferreira</b></sub></a> <a href="https://github.com/hatigo" title="Rocketseat"></a>
-
-
-Feito por Thiago Ferreira
-
- [![Linkedin Badge](https://img.shields.io/badge/-ThiagoFerreira-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thiago-lucas-mendon%C3%A7a-ferreira/)](https://www.linkedin.com/in/thiago-lucas-mendon%C3%A7a-ferreira/) 
-[![Gmail Badge](https://img.shields.io/badge/-thiagoferreira.dev.br@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thiagoferreira.dev.br@gmail.com)](mailto:thiagoferreira.dev.br@gmail.com)
+Feito Por Paulo Vitor Fernandes Andrade
