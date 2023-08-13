@@ -9,8 +9,6 @@ const cadastroClientes = async (req, res) => {
 
         const emailCliente = await knex('clientes').where({email}).first();
 
-        console.log(emailCliente)
-
         const cpfCliente = await knex('clientes').where({cpf}).first();
 
         if(emailCliente && emailCliente.status == 0){
