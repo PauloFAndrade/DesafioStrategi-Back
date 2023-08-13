@@ -142,7 +142,7 @@ jwt_SECRET = e utilize esta variável para criar uma chave secreta que será uti
 $ `git clone <https://github.com/PauloFAndrade/DesafioStrategi-Back>`
 
 # Acesse a pasta do projeto no terminal/cmd
-
+$ `cd DesafioStrategi-Back`
 # Instale as dependências
 $  `npm install`
 
