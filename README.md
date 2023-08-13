@@ -3,7 +3,7 @@
 ## Sobre
 - Esta é a documentação da API que será consumida pelo front do desafio.
 
-- O repositório para o front desse desafio pode ser encontrado neste [link](https://github.com/hatigo/desafio-tecnico-strategi-frontend)
+- O repositório para o front desse desafio pode ser encontrado neste [link](https://github.com/PauloFAndrade/DesafioStrategi-Front)
 
 ---
 
