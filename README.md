@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS clientes (
   	telefone varchar(11) NOT NULL, 
   	data_de_cadastro date NOT NULL,
   	url_da_foto varchar,
-  	status integer,
+  	status integer
   
 )
 ```
