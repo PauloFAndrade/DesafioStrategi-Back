@@ -72,7 +72,7 @@ $ `cd DesafioStrategi-Back`
 # Execute o Docker Compose
 $  `docker compose up --build`
 
-# O servidor inciará na porta:3001 - acesse <http://localhost:3001> 
+# O servidor iniciará na porta:3001 - acesse <http://localhost:3001> 
 
 ## Instruções para usar os endpoints:
 
