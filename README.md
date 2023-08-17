@@ -64,7 +64,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ## Rodando a API 
 
 # Clone este repositório
-$ `git clone <https://github.com/PauloFAndrade/DesafioStrategi-Back>`
+$ `git clone https://github.com/PauloFAndrade/DesafioStrategi-Back`
 
 # Acesse a pasta do projeto no terminal/cmd
 $ `cd DesafioStrategi-Back`
