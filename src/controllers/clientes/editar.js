@@ -45,7 +45,7 @@ const editarCliente = async (req, res) => {
         };
 
         res.status(200).json({
-            success: 'Cadastro Do Cliente Editado Dom Sucesso'
+            success: 'Cadastro Do Cliente Editado Com Sucesso'
         });
 
     } catch (error) {
