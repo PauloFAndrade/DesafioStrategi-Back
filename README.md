@@ -57,11 +57,24 @@ Tabela de conteúdos
 
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [PostgreSQL](https://www.postgresql.org/). 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [PostgreSQL](https://www.postgresql.org/) e [Docker](https://www.docker.com/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) e um gerenciador de banco de dados como o [Beekeeper Studio](https://www.beekeeperstudio.io/)
 
 ---
-##  Banco de dados 
+## Rodando a API 
+
+# Clone este repositório
+$ `git clone <https://github.com/PauloFAndrade/DesafioStrategi-Back>`
+
+# Acesse a pasta do projeto no terminal/cmd
+$ `cd DesafioStrategi-Back`
+
+# Execute o Docker Compose
+$  `docker compose up --build`
+
+# O servidor inciará na porta:3001 - acesse <http://localhost:3001> 
+
+---
 
 ### Crie o banco de dados
 
@@ -135,23 +148,6 @@ DB_DATABASE = nome do banco que deseja se conectar, neste caso é imobiliaria
 
 jwt_SECRET = e utilize esta variável para criar uma chave secreta que será utilizada para fazer a encriptação de senhas
 ```
----
-## Rodando a API 
-
-# Clone este repositório
-$ `git clone <https://github.com/PauloFAndrade/DesafioStrategi-Back>`
-
-# Acesse a pasta do projeto no terminal/cmd
-$ `cd DesafioStrategi-Back`
-# Instale as dependências
-$  `npm install`
-
-# Execute a aplicação em modo de desenvolvimento
-$ `npm run dev`
-
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000> 
-
----
 
 ## Instruções para usar os endpoints:
 
