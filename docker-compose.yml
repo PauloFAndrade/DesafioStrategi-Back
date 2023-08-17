@@ -1,0 +1,28 @@
+version: '3'
+services:
+  db:
+    build:
+      dockerfile: Dockerfile-Postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: imobiliaria
+      POSTGRES_INITDB_ARGS: "--lc-monetary=pt_BR.utf8 --lc-time=pt_BR.utf8"
+      PGTZ: 'America/Sao_Paulo'
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+
+  backend:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/app
+
+volumes:
+  postgres_data:
